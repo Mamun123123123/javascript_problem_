@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #user{
+        display: none;
+        color: red;
+    }
+    #pass{
+        display: none;
+        color: red;
+    }
+</style>
+<body>
+    <form id="form">
+       <input id="username" type="text" placeholder="username" required><br>
+       <span id="user">username must be at least 3 characters</span>
+       <input id="password" type="password" placeholder="password" required><br>
+       <span id="pass">password must be at least 6 characters</span>
+       <button type="submit">submit</button>
+    </form>
+    <script src="task2.js"></script>
+</body>
+</html>
