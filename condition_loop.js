@@ -102,18 +102,38 @@
 
 //sum of digit 
 
+// let k = 12 ;
+// if(isNaN(k)){
+//     console.log("Invalid Input");
+// }else{
+//     if(k>0){
+//         let sum = 0
+//        while(k>0){
+//         let rem = k%10
+//         sum +=rem
+//         k = Math.floor(k/10)
+//        }
+//        console.log(sum);
+       
+//     }else{
+//         console.log("please give positive value or more than 0");   
+//     }
+// }
+
+// reverse of number
+
 let k = 12 ;
 if(isNaN(k)){
     console.log("Invalid Input");
 }else{
     if(k>0){
-        let sum = 0
+        let rev = 0
        while(k>0){
         let rem = k%10
-        sum +=rem
+        rev = rev*10 + rem
         k = Math.floor(k/10)
        }
-       console.log(sum);
+       console.log(rev);
        
     }else{
         console.log("please give positive value or more than 0");   
