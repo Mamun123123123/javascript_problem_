@@ -141,24 +141,43 @@
 // }
 
 //strong number
-let k = 12 ;
-if(isNaN(k)){
-    console.log("Invalid Input");
-}else{
-    if(k>0){
-        let sum = 0
-       while(k>0){
-        let rem = k%10
-        let fact =1
-        for(let i=1;i<=rem;i++){
-         fact = fact*i
-        }
-        sum = sum+fact
-        k = Math.floor(k/10)
-       }
-       console.log(sum);
+// let k = 12 ;
+// if(isNaN(k)){
+//     console.log("Invalid Input");
+// }else{
+//     if(k>0){
+//         let sum = 0
+//        while(k>0){
+//         let rem = k%10
+//         let fact =1
+//         for(let i=1;i<=rem;i++){
+//          fact = fact*i
+//         }
+//         sum = sum+fact
+//         k = Math.floor(k/10)
+//        }
+//        console.log(sum);
        
+//     }else{
+//         console.log("please give positive value or more than 0");   
+//     }
+// }
+
+//guess number
+let random = Math.floor(Math.random()*100 + 1)
+let guess = -1
+while(guess !== random){
+    guess = Number(prompt("Guess the number"))
+    if(isNaN(guess)||guess<1||guess>100){
+        console.log("try again");
+        continue
+    }
+    if(guess>random){
+        console.log("too high,try again");
+        
+    }else if(guess<random){
+        console.log("too low,try again");
     }else{
-        console.log("please give positive value or more than 0");   
+        console.log("congrats",guess);  
     }
 }
