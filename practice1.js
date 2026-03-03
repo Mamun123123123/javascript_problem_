@@ -40,17 +40,22 @@ console.log(Math.floor(13%5)); //vagsesh dibe % chinho
 //unary operator
 let i = 11
 i = i++ + ++i
-console.log(i);
+//console.log(i);
 
 let u = 11,e=22
 let l = u + e + u++ + e++ + ++u + ++e
-console.log(u);
-console.log(e);
-console.log(l);
+//console.log(u);
+//console.log(e);
+//console.log(l);
 
 let w = true
 w++
-console.log(w);
+//console.log(w);
+
+
+
+
+
 
 
 
