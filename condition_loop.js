@@ -31,7 +31,7 @@ if(isNaN(n)){
 
 //sum of factorial number 
 let m = 5 ;
-if(isNaN(n)){
+if(isNaN(m)){
     console.log("Invalid Input");
 }else{
     if(m>0){
@@ -40,6 +40,25 @@ if(isNaN(n)){
             fact = fact * i
         }
         console.log(fact);
+    }else{
+        console.log("please give positive value or more than 0");
+        
+    }
+}
+
+//factors of number
+
+let k = 12 ;
+if(isNaN(k)){
+    console.log("Invalid Input");
+}else{
+    if(k>0){
+       for(let i=1;i<=k/2;i++){
+        if(k%i === 0){
+            console.log(i);
+        }
+       }
+       console.log(k);
     }else{
         console.log("please give positive value or more than 0");
         
