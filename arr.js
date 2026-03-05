@@ -42,14 +42,14 @@ for(let i=1;i<min_value.length;i++){
 console.log(min);
 
 
-let ar = [20,30,10,40,90,80,30,200,400]
+let ar = [20,30,10,40,90,80,30,400,400,400,400]
 let first_max = Math.max(ar[0],ar[1])
 let second_max = Math.min(ar[0],ar[1])
 for(let i = 2;i<ar.length;i++){
     if(first_max<ar[i]){
         second_max = first_max
         first_max = ar[i]   
-    }else if(second_max<ar[i]){
+    }else if(second_max<ar[i] && first_max != ar[i]){
         second_max = ar[i]
     }
 }
@@ -62,7 +62,7 @@ for(let i=2;i<arrr.length;i++){
     if(first_min>arrr[i]){
         second_min=first_min
         first_min=arrr[i]
-    }else if(second_min>arrr[i]){
+    }else if(second_min>arrr[i] && first_min!== arrr[i]){
         second_min = arrr[i]
     }
 }
@@ -71,6 +71,36 @@ console.log(first_min);
 console.log(second_min);
 
 
+let array = [10,20,30]
+// let temp = new Array(array.length)
+// let j=0
+// for(let i=array.length-1;i>=0;i--){
+//     temp[j]=array[i]
+//     j++
+// }
+// console.log(temp);
+
+// let i =0,j=array.length-1
+// while(i!=j){
+//     let temp = array[i]
+//     array[i] = array[j]
+//     array[j] =temp
+//     i++
+//     j--
+// }
+// console.log(array);
 
 
 
+let a = [0,1,0,1,1,0]
+let i=0,j=0
+while(i<a.length){
+    if(a[i]==0){
+        let temp = a[i]
+        a[i]=a[j]
+        a[j]=temp
+        j++
+    }
+    i++
+}
+console.log(a);
