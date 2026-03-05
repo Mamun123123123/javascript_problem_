@@ -92,7 +92,7 @@
 
 
 
-// let a = [0,1,0,1,1,0]
+// let a = [0,1,0,1,1,0,0,1,1,1,0]
 // let i=0,j=0
 // while(i<a.length){
 //     if(a[i]==0){
@@ -138,14 +138,42 @@
 // }
 // console.log(arr);
 
-let arr = [1,2,3,4,5]
-let k = 2
-for(let j=0;j<k;j++){
-    let copy = arr[arr.length-1]
-    for(let i=arr.length-1;i>=0;i--){
-        arr[i] = arr[i-1]
+// let arr = [1,2,3,4,5]
+// let k = 2
+// for(let j=0;j<k;j++){
+//     let copy = arr[arr.length-1]
+//     for(let i=arr.length-1;i>=0;i--){
+//         arr[i] = arr[i-1]
+//     }
+//     arr[0] = copy
+// }
+// console.log(arr);
+
+// let ar = [...arr]
+// console.log(ar);
+
+// let arr = [0,0,0,1,1,1,2,2,3,3,4,5,6,7,7]
+
+// let j = 1
+
+// for(let i=0;i<arr.length-1;i++){
+//     if(arr[i] != arr[i+1]){
+//         arr[j] = arr[i+1]
+//         j++
+//     }
+// }
+
+// console.log(arr.slice(0,j))
+
+let ar = [2,1,3,2,4,1,6]
+let result = []
+for(let i = 0;i<ar.length ; i++){
+    if(!result.includes(ar[i])){
+        result.push(ar[i])
     }
-    arr[0] = copy
 }
-console.log(arr);
+console.log(result);
+
+
+
 
