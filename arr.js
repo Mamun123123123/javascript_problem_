@@ -165,14 +165,36 @@
 
 // console.log(arr.slice(0,j))
 
-let ar = [2,1,3,2,4,1,6]
-let result = []
-for(let i = 0;i<ar.length ; i++){
-    if(!result.includes(ar[i])){
-        result.push(ar[i])
+// let ar = [2,1,3,2,4,1,6]
+// let result = []
+// for(let i = 0;i<ar.length ; i++){
+//     if(!result.includes(ar[i])){
+//         result.push(ar[i])
+//     }
+// }
+// console.log(result);
+
+let arr1 = [1,3,5] 
+let arr2 = [7,8,9]
+let marge = new Array(arr1.length + arr2.length)
+let i=j=k=0
+while(i<arr1.length && j<arr2.length){
+    if(arr1[i]<arr2[j]){
+        marge[k++] = arr1[i++]
+    }
+    else{
+        marge[k++] = arr2[j++]
     }
 }
-console.log(result);
+while(j<arr2.length){
+    marge[k++] = arr2[j++]
+}
+while(i<arr1.length){
+    marge[k++] = arr1[i++]
+}
+console.log(marge);
+
+
 
 
 
