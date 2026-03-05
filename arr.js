@@ -105,23 +105,47 @@
 // }
 // console.log(a);
 
+// let arr = [1,2,3,4,5]
+// let copy = arr[0]
+// for(let i=0;i<arr.length-1;i++){
+//     arr[i]=arr[i+1]
+// }
+// arr[arr.length-1] = copy
+// console.log(arr);
+
+// let ar = [1,2,3,4,5]
+// let copy_ = ar[ar.length-1];
+
+// console.log(copy_);
+
+
+// for(let i=ar.length-1;i>=0;i--){
+//     ar[i] = ar[i-1]
+// }
+// ar[0] = copy_
+
+// console.log(ar);
+
+// let arr = [1,2,3,4,5]
+
+// let k=2
+// for(let j=0;j<k;j++){
+//     let copy = arr[0]
+//     for(let i=0;i<arr.length-1;i++){
+//         arr[i] = arr[i+1]
+//     }
+//     arr[arr.length-1] = copy
+// }
+// console.log(arr);
+
 let arr = [1,2,3,4,5]
-let copy = arr[0]
-for(let i=0;i<arr.length-1;i++){
-    arr[i]=arr[i+1]
+let k = 2
+for(let j=0;j<k;j++){
+    let copy = arr[arr.length-1]
+    for(let i=arr.length-1;i>=0;i--){
+        arr[i] = arr[i-1]
+    }
+    arr[0] = copy
 }
-arr[arr.length-1] = copy
 console.log(arr);
 
-let ar = [1,2,3,4,5]
-let copy_ = ar[ar.length-1];
-
-console.log(copy_);
-
-
-for(let i=ar.length-1;i>=0;i--){
-    ar[i] = ar[i-1]
-}
-ar[0] = copy_
-
-console.log(ar);
