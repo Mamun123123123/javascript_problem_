@@ -148,19 +148,53 @@
 // }
 // console.log(max_word);
 
-let str = "hello world"
-let result = str.split(" ")
-let c = result.map((item)=>item.charAt(0).toUpperCase() + item.slice(1))
-console.log(c.join(" "));
+// let str = "hello world"
+// let result = str.split(" ")
+// let c = result.map((item)=>item.charAt(0).toUpperCase() + item.slice(1))
+// console.log(c.join(" "));
 
-let arr = [1,2,3,2,4,5,1,6]
-let duplicate = []
-let all = []
-for(let i=0;i<arr.length;i++){
-    if(!all.includes(arr[i])){
-         all.push(arr[i])
-    }else{
-        duplicate.push(arr[i])
+// let arr = [1,2,3,2,4,5,1,6]
+// let duplicate = []
+// let all = []
+// for(let i=0;i<arr.length;i++){
+//     if(!all.includes(arr[i])){
+//          all.push(arr[i])
+//     }else{
+//         duplicate.push(arr[i])
+//     }
+// }
+// console.log(duplicate);
+
+let arr = [1,2,3,4,6]
+
+let max = Math.max(...arr)
+
+for(let i = 1;i<=max;i++){
+    if(!arr.includes(i)){
+        console.log(i);
     }
 }
-console.log(duplicate);
+
+// let str = "javascript"
+// let result = str.split("")
+// let r = []
+// let vowels = "aeiouAEIOU"
+// for(let i=0;i<result.length;i++){
+//     if(!vowels.includes(str[i])){
+//         r.push(str[i])
+//     }
+// }
+// let without_vowel = r.join("")
+// console.log(without_vowel);
+
+let str = "javascript"
+let vowels = "aeiouAEIOU"
+let result = ""
+
+for(let i=0;i<str.length;i++){
+    if(!vowels.includes(str[i])){
+        result += str[i]
+    }
+}
+
+console.log(result)
