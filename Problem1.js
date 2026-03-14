@@ -10,14 +10,24 @@
 // }
 // console.log(max);
 
+
+
+// for(let i=0;i<str.length;i++){
+//         if(str[i]+str[i+1] === "mu"){
+//             result.push(str[i]+str[i+1])
+//         }
+// }
+
 let str = "Abdullah al mamun"
 
-let result = []
-
+let result = {}
+let count = 0;
 for(let i=0;i<str.length;i++){
-        if(str[i]+str[i+1] === "mu"){
-            result.push(str[i]+str[i+1])
-        }
+    if(result[str[i]]){
+        result[str[i]]++
+    }else{
+        result[str[i]] = 1
+    }
 }
 console.log(result);
 
