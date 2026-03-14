@@ -152,3 +152,15 @@ let str = "hello world"
 let result = str.split(" ")
 let c = result.map((item)=>item.charAt(0).toUpperCase() + item.slice(1))
 console.log(c.join(" "));
+
+let arr = [1,2,3,2,4,5,1,6]
+let duplicate = []
+let all = []
+for(let i=0;i<arr.length;i++){
+    if(!all.includes(arr[i])){
+         all.push(arr[i])
+    }else{
+        duplicate.push(arr[i])
+    }
+}
+console.log(duplicate);
