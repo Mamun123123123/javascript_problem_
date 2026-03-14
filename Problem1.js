@@ -78,16 +78,52 @@
 
 
 
-let str = "aaabbc"
-let result = {}
-for(let i=0;i<str.length;i++){
-    if(result[str[i]]){
-        result[str[i]]++
-    }else{
-        result[str[i]] = 1
+// let str = "aaabbc"
+// let result = {}
+// for(let i=0;i<str.length;i++){
+//     if(result[str[i]]){
+//         result[str[i]]++
+//     }else{
+//         result[str[i]] = 1
+//     }
+// }
+// console.log(result);
+
+
+
+// let arr = [1,2,2,3,4,4,5]
+// let result = []
+// for(let i=0;i<arr.length;i++){
+//         if(!result.includes(arr[i])){
+//             result.push(arr[i])
+//         }
+        
+// }
+// console.log(result);
+
+let arr = [100, 995, 30, 800, 40000]
+
+let max = arr[0]
+let second_max = arr[1]
+
+for(let i=0;i<arr.length;i++){
+    if(max<arr[i]){
+        second_max = max
+        max = arr[i]
+    }else if(second_max<arr[i] && arr[i] !== max){
+        second_max = arr[i]
     }
 }
-console.log(result);
+console.log(second_max);
+console.log(max);
 
 
-
+let str = "javascriptA"
+let vowels = "aeiouAEIOU"
+let count = 0
+for(let i = 0;i<str.length;i++){
+    if(vowels.includes(str[i])){
+        count++
+    }
+}
+console.log(count);
