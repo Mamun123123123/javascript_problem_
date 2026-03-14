@@ -101,29 +101,54 @@
 // }
 // console.log(result);
 
-let arr = [100, 995, 30, 800, 40000]
+// let arr = [100, 995, 30, 800, 40000]
 
-let max = arr[0]
-let second_max = arr[1]
+// let max = arr[0]
+// let second_max = arr[1]
 
-for(let i=0;i<arr.length;i++){
-    if(max<arr[i]){
-        second_max = max
-        max = arr[i]
-    }else if(second_max<arr[i] && arr[i] !== max){
-        second_max = arr[i]
-    }
-}
-console.log(second_max);
-console.log(max);
+// for(let i=0;i<arr.length;i++){
+//     if(max<arr[i]){
+//         second_max = max
+//         max = arr[i]
+//     }else if(second_max<arr[i] && arr[i] !== max){
+//         second_max = arr[i]
+//     }
+// }
+// console.log(second_max);
+// console.log(max);
 
 
-let str = "javascriptA"
-let vowels = "aeiouAEIOU"
-let count = 0
-for(let i = 0;i<str.length;i++){
-    if(vowels.includes(str[i])){
-        count++
-    }
-}
-console.log(count);
+// let str = "javascriptA"
+// let vowels = "aeiouAEIOU"
+// let count = 0
+// for(let i = 0;i<str.length;i++){
+//     if(vowels.includes(str[i])){
+//         count++
+//     }
+// }
+// console.log(count);
+
+// let arr = [0, 1, false, 2, "", 3, null, undefined, "hello"]
+// let falsy_value = [0,false,"",null,undefined]
+// let result = []
+// for(let i=0;i<arr.length;i++){
+//     if(!falsy_value.includes(arr[i])){
+//         result.push(arr[i])
+//     }
+// }
+// console.log(result);
+
+// let str = "JavaScript is very powerfulllyyyyy language"
+// let result = str.split(" ")
+// let max_word = result[0]
+// for(let i=0;i<result.length;i++){
+//     if(max_word.length<result[i].length){
+//         max_word = result[i]
+//     }
+// }
+// console.log(max_word);
+
+let str = "hello world"
+let result = str.split(" ")
+let c = result.map((item)=>item.charAt(0).toUpperCase() + item.slice(1))
+console.log(c.join(" "));
