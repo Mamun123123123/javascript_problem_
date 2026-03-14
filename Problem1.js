@@ -18,17 +18,27 @@
 //         }
 // }
 
-let str = "Abdullah al mamun"
+// let str = "Abdullah al mamun"
 
-let result = {}
-let count = 0;
-for(let i=0;i<str.length;i++){
-    if(result[str[i]]){
-        result[str[i]]++
-    }else{
-        result[str[i]] = 1
-    }
+// let result = {}
+// let count = 0;
+// for(let i=0;i<str.length;i++){
+//     if(result[str[i]]){
+//         result[str[i]]++
+//     }else{
+//         result[str[i]] = 1
+//     }
+// }
+// console.log(result);
+
+let str = "Abdullah"
+
+let result = ""
+
+for(let i = str.length-1; i >= 0; i--){
+    result += str[i]
 }
-console.log(result);
+
+console.log(result)
 
 
