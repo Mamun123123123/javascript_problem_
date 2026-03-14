@@ -31,14 +31,23 @@
 // }
 // console.log(result);
 
-let str = "Abdullah"
+// let str = "Abdullah"
 
-let result = ""
+// let result = ""
 
-for(let i = str.length-1; i >= 0; i--){
-    result += str[i]
-}
+// for(let i = str.length-1; i >= 0; i--){
+//     result += str[i]
+// }
 
-console.log(result)
+// console.log(result)
+
+
+let str = "Abdullah Al Mamun"
+//space onujayi alada hobe and array dibe
+
+let result = str.split(" ").map((item)=>item.split("").reverse().join(''))
+console.log(result.join(" "));
+
+
 
 
