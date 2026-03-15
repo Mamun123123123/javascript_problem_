@@ -45,7 +45,7 @@
 //     }
 // }
 
-let arr = [1,2,3,4,5]
+// let arr = [1,2,3,4,5]
 // let result = {
 //     even:[],odd:[]
 // }
@@ -59,15 +59,66 @@ let arr = [1,2,3,4,5]
 // }
 // console.log(result);
 
-let copy = arr[arr.length-1]
-console.log(copy);
-for(let i=arr.length-1;i>=0;i--)
-{
-    arr[i] = arr[i-1]
+// let copy = arr[arr.length-1]
+// console.log(copy);
+// for(let i=arr.length-1;i>=0;i--)
+// {
+//     arr[i] = arr[i-1]
+// }
+// arr[0] = copy
+// console.log(arr);
+
+// let a = [1,2,3,4]
+// let b = [3,4,5,6]
+// let resu = []
+// for(let i=0;i<a.length;i++){
+//   for(let j=0;j<b.length;j++){
+//     if(a[i] === b[j]){
+//         resu.push(a[i])
+//     }
+//   }
+     
+// }
+// console.log(resu);
+
+
+let arr = [0,1,0,3,12]
+let result = []
+let zero_count = 0
+for(let i=0;i<arr.length;i++){
+    if(arr[i] === 0){
+        zero_count++
+    }else{
+        result.push(arr[i])
+    }
 }
-arr[0] = copy
-console.log(arr);
+for(let i =0;i<zero_count;i++){
+    result.unshift(0)
+}
+console.log(result);
+
+let str = "programming"
+let result1 = ""
+for(let i=0;i<str.length;i++){
+    if(result1.includes(str[i])){
+        continue
+    }else{
+        result1 +=str[i]
+    }
+}
+console.log(result1);
+
+let c = Object.assign({},str)
+console.log(c);
 
 
-
-
+let ar = ["apple","banana","apple","orange"]
+let r = {}
+for(let i =0;i<ar.length;i++){
+    if(r[ar[i]]){
+        r[ar[i]]++
+    }else{
+        r[ar[i]] = 1
+    }
+}
+console.log(r);
