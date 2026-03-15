@@ -123,36 +123,52 @@
 // }
 // console.log(r);
 
-let nums = [2,7,11,15]
-let target = 9
-let result = []
+// let nums = [2,7,11,15]
+// let target = 9
+// let result = []
 
-for(let i = 0; i < nums.length; i++){
-    for(let j = i + 1; j < nums.length; j++){
-        if(nums[i] + nums[j] === target){
-            result.push(nums[i])
-            result.push(nums[j])
+// for(let i = 0; i < nums.length; i++){
+//     for(let j = i + 1; j < nums.length; j++){
+//         if(nums[i] + nums[j] === target){
+//             result.push(nums[i])
+//             result.push(nums[j])
+//         }
+//     }
+// }
+
+// console.log(result);
+
+
+// let a = [1,3,5]
+// let b = [2,4,6]
+
+// let results = []
+// let i=0,j=0
+
+// while(i<a.length && j<b.length){
+//     if(a[i] < b[j]){
+//         results.push(a[i])
+//         i++
+//     }else{
+//         results.push(b[j])
+//         j++
+//     }
+// }
+
+// console.log(results.concat(a.slice(i)).concat(b.slice(j)))
+
+let arr = [2,7,11,15]
+let target = 9
+for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i] + arr[j] === target){
+            console.log(arr[i],arr[j]);
+            
         }
     }
 }
 
-console.log(result);
 
 
-let a = [1,3,5]
-let b = [2,4,6]
 
-let results = []
-let i=0,j=0
 
-while(i<a.length && j<b.length){
-    if(a[i] < b[j]){
-        results.push(a[i])
-        i++
-    }else{
-        results.push(b[j])
-        j++
-    }
-}
-
-console.log(results.concat(a.slice(i)).concat(b.slice(j)))
