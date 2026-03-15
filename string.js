@@ -82,43 +82,77 @@
 // console.log(resu);
 
 
-let arr = [0,1,0,3,12]
+// let arr = [0,1,0,3,12]
+// let result = []
+// let zero_count = 0
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i] === 0){
+//         zero_count++
+//     }else{
+//         result.push(arr[i])
+//     }
+// }
+// for(let i =0;i<zero_count;i++){
+//     result.unshift(0)
+// }
+// console.log(result);
+
+// let str = "programming"
+// let result1 = ""
+// for(let i=0;i<str.length;i++){
+//     if(result1.includes(str[i])){
+//         continue
+//     }else{
+//         result1 +=str[i]
+//     }
+// }
+// console.log(result1);
+
+// let c = Object.assign({},str)
+// console.log(c);
+
+
+// let ar = ["apple","banana","apple","orange"]
+// let r = {}
+// for(let i =0;i<ar.length;i++){
+//     if(r[ar[i]]){
+//         r[ar[i]]++
+//     }else{
+//         r[ar[i]] = 1
+//     }
+// }
+// console.log(r);
+
+let nums = [2,7,11,15]
+let target = 9
 let result = []
-let zero_count = 0
-for(let i=0;i<arr.length;i++){
-    if(arr[i] === 0){
-        zero_count++
-    }else{
-        result.push(arr[i])
+
+for(let i = 0; i < nums.length; i++){
+    for(let j = i + 1; j < nums.length; j++){
+        if(nums[i] + nums[j] === target){
+            result.push(nums[i])
+            result.push(nums[j])
+        }
     }
 }
-for(let i =0;i<zero_count;i++){
-    result.unshift(0)
-}
+
 console.log(result);
 
-let str = "programming"
-let result1 = ""
-for(let i=0;i<str.length;i++){
-    if(result1.includes(str[i])){
-        continue
+
+let a = [1,3,5]
+let b = [2,4,6]
+
+let results = []
+let i=0,j=0
+
+while(i<a.length && j<b.length){
+    if(a[i] < b[j]){
+        results.push(a[i])
+        i++
     }else{
-        result1 +=str[i]
+        results.push(b[j])
+        j++
     }
 }
-console.log(result1);
 
-let c = Object.assign({},str)
-console.log(c);
-
-
-let ar = ["apple","banana","apple","orange"]
-let r = {}
-for(let i =0;i<ar.length;i++){
-    if(r[ar[i]]){
-        r[ar[i]]++
-    }else{
-        r[ar[i]] = 1
-    }
-}
-console.log(r);
+console.log(results.concat(a.slice(i)).concat(b.slice(j)))
