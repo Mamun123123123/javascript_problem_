@@ -18,32 +18,32 @@
 // console.log(count);
 
 
-let obj = {
-  a: 10,
-  b: 20,
-  c: 30
-}
+// let obj = {
+//   a: 10,
+//   b: 20,
+//   c: 30
+// }
 
 
-let sum = 0
-for (const key in obj) {
-   sum = sum+obj[key]
-}
-console.log(sum);
+// let sum = 0
+// for (const key in obj) {
+//    sum = sum+obj[key]
+// }
+// console.log(sum);
 
 
-let str = "banana"
-let result = {}
+// let str = "banana"
+// let result = {}
 
-for(let i=0;i<str.length;i++){
-    if(result[str[i]]){
-        result[str[i]]++
-    }
-    else{
-        result[str[i]] = 1
-    }
-}
-console.log(result);
+// for(let i=0;i<str.length;i++){
+//     if(result[str[i]]){
+//         result[str[i]]++
+//     }
+//     else{
+//         result[str[i]] = 1
+//     }
+// }
+// console.log(result);
 
 let scores = {
   math: 80,
@@ -64,3 +64,36 @@ for(let i =0;i<results.length;i++){
     }
 }
 console.log(max);
+
+// let arr = ["apple","banana","mango"]
+// let re = {}
+// for(let i = 0 ;i<arr.length;i++){
+        
+//     re[i] = arr[i]
+    
+// }
+// console.log(re);
+
+let arr = ["apple","banana","apple","orange","banana"]
+let res = {}
+for(let i=0;i<arr.length;i++){
+    if(res[arr[i]]){
+        res[arr[i]]++
+    }else{
+        res[arr[i]] = 1
+    }
+}
+console.log(res);
+
+let obj = {
+  name: "Mamun",
+  city: "Dhaka"
+}
+
+let result = {}
+
+for(let key in obj){
+  result[obj[key]] = key
+}
+
+console.log(result)
