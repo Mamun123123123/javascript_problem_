@@ -97,3 +97,14 @@ for(let key in obj){
 }
 
 console.log(result)
+
+let str = "hello"
+let resultt = []
+for(let i = 0;i<str.length;i++){
+    if(resultt[str[i]]){
+        resultt[str[i]]++
+    }else{
+        resultt[str[i]] = 1
+    }
+}
+console.log(resultt);
