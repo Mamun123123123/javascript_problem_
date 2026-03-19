@@ -171,8 +171,47 @@ let name_ayesha = people.filter(item=>{
     return true
   }else{
     return false
-    
+
   }
   
 })
-console.log(name_ayesha);
+// console.log(name_ayesha);
+
+
+let employees = [
+  { id: 1, name: "Rahim", gender: "male", company: "Google", salary: 80000 },
+  { id: 2, name: "Karim", gender: "male", company: "Microsoft", salary: 75000 },
+  { id: 3, name: "Ayesha", gender: "female", company: "Google", salary: 82000 },
+  { id: 4, name: "Fatema", gender: "female", company: "Amazon", salary: 78000 },
+  { id: 5, name: "Sakib", gender: "male", company: "Amazon", salary: 90000 },
+  { id: 6, name: "Nusrat", gender: "female", company: "Tesla", salary: 88000 },
+  { id: 7, name: "Jamal", gender: "male", company: "Apple", salary: 87000 },
+  { id: 8, name: "Sumaiya", gender: "female", company: "Microsoft", salary: 72000 },
+  { id: 9, name: "Tanvir", gender: "male", company: "Google", salary: 71000 },
+  { id: 10, name: "Mim", gender: "female", company: "Amazon", salary: 76000 },
+  { id: 11, name: "Hasan", gender: "male", company: "Apple", salary: 83000 },
+  { id: 12, name: "Rima", gender: "female", company: "Tesla", salary: 79000 },
+  { id: 13, name: "Imran", gender: "male", company: "Microsoft", salary: 74000 },
+  { id: 14, name: "Tania", gender: "female", company: "Google", salary: 77000 },
+  { id: 15, name: "Arif", gender: "male", company: "Amazon", salary: 70000 },
+  { id: 16, name: "Lima", gender: "female", company: "Apple", salary: 73000 },
+  { id: 17, name: "Rakib", gender: "male", company: "Tesla", salary: 81000 },
+  { id: 18, name: "Sadia", gender: "female", company: "Microsoft", salary: 85000 },
+  { id: 19, name: "Naim", gender: "male", company: "Google", salary: 78000 },
+  { id: 20, name: "Priya", gender: "female", company: "Amazon", salary: 86000 }
+];
+
+let male_group = []
+let female_group = []
+
+for(let key  in employees){
+  if(employees[key].gender === "male"){
+    male_group.push(employees[key])
+  }else{
+    female_group.push(employees[key])
+  }
+  
+}
+console.log(male_group);
+console.log(female_group);
+
