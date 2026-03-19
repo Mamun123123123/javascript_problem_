@@ -203,7 +203,7 @@ let employees = [
 
 let male_group = []
 let female_group = []
-
+let high_salary =  Math.max(...employees.map(e => e.salary));
 for(let key  in employees){
   if(employees[key].gender === "male"){
     male_group.push(employees[key])
@@ -214,4 +214,6 @@ for(let key  in employees){
 }
 console.log(male_group);
 console.log(female_group);
+console.log(high_salary);
+
 
