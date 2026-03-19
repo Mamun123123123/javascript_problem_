@@ -110,23 +110,40 @@
 // console.log(resultt);
 
 
-let arr = [
-  {name:"A", age:20},
-  {name:"B", age:20},
-  {name:"C", age:25}
-]
+// let arr = [
+//   {name:"A", age:20},
+//   {name:"B", age:20},
+//   {name:"C", age:25}
+// ]
 
-let result = {}
+// let result = {}
+
+// for(let i = 0; i < arr.length; i++){
+//   let age = arr[i].age
+//   let name = arr[i].name
+
+//   if(result[age]){
+//     result[age].push(name)
+//   } else {
+//     result[age] = [name]
+//   }
+// }
+
+// console.log(result)
+
+let arr = [1,2,3,4]
+let result = []
 
 for(let i = 0; i < arr.length; i++){
-  let age = arr[i].age
-  let name = arr[i].name
-
-  if(result[age]){
-    result[age].push(name)
-  } else {
-    result[age] = [name]
-  }
+    let product = 1
+    
+    for(let j = 0; j < arr.length; j++){
+        if(i !== j){   
+            product *= arr[j]
+        }
+    }
+    
+    result.push(product)
 }
 
 console.log(result)
