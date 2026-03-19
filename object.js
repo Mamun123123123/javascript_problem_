@@ -156,4 +156,23 @@ let result_string = ar.filter(item=>{
     return false
   }
 })
-console.log(result_string);
+// console.log(result_string);
+
+let people = [
+  { name: "Rahim", gender: "male", age: 25 },
+  { name: "Karim", gender: "male", age: 30 },
+  { name: "Ayesha", gender: "female", age: 22 },
+  { name: "Ayesha", gender: "female", age: 20 },
+  { name: "Fatema", gender: "female", age: 28 }
+];
+
+let name_ayesha = people.filter(item=>{
+  if(item.name === "Ayesha"){
+    return true
+  }else{
+    return false
+    
+  }
+  
+})
+console.log(name_ayesha);
