@@ -138,7 +138,7 @@ for(let i = 0; i < arr.length; i++){
     let product = 1
     
     for(let j = 0; j < arr.length; j++){
-        if(i !== j){   
+        if(i !== j){  
             product *= arr[j]
         }
     }
@@ -146,4 +146,14 @@ for(let i = 0; i < arr.length; i++){
     result.push(product)
 }
 
-console.log(result)
+// console.log(result)
+
+let ar = [1,2,4,"m","a",10]
+let result_string = ar.filter(item=>{
+  if(typeof item === "number"){
+    return true
+  }else{
+    return false
+  }
+})
+console.log(result_string);
