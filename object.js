@@ -203,6 +203,8 @@ let employees = [
 
 let male_group = []
 let female_group = []
+let sorted = [...employees].sort((a, b) => b.salary - a.salary);
+let max = Math.max(...employees.map(e => e.salary));
 let high_salary =  Math.max(...employees.map(e => e.salary));
 for(let key  in employees){
   if(employees[key].gender === "male"){
@@ -215,5 +217,7 @@ for(let key  in employees){
 console.log(male_group);
 console.log(female_group);
 console.log(high_salary);
+console.log(sorted);
+
 
 
