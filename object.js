@@ -244,3 +244,23 @@ for(let i=0;i<str.length;i++){
         }
 }
 console.log(result);
+
+let obj = [
+  {name:"A", dept:"IT"},
+  {name:"B", dept:"HR"},
+  {name:"C", dept:"IT"}
+]
+
+let result_by = {}
+
+for (let i = 0; i < obj.length; i++) {
+  let dept = obj[i].dept
+
+  if (result_by[dept]) {
+    result_by[dept].push(obj[i])
+  } else {
+    result_by[dept] = [obj[i]]
+  }
+}
+
+console.log(result_by)
