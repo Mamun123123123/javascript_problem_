@@ -221,15 +221,26 @@ for(let key  in employees){
 
 
 
-let arr = [1,2,3,2,4,1]
+// let arr = [1,2,3,2,4,1]
+// let result = []
+// let duplicate = []
+// for(let i=0;i<arr.length;i++){
+//   if(result.includes(arr[i])){
+//     duplicate.push(arr[i])
+//   }else{
+//     result.push(arr[i])
+//   }
+// }
+// console.log(duplicate);
+// console.log(result);
+
+let str = "banana"
 let result = []
-let duplicate = []
-for(let i=0;i<arr.length;i++){
-  if(result.includes(arr[i])){
-    duplicate.push(arr[i])
-  }else{
-    result.push(arr[i])
-  }
+for(let i=0;i<str.length;i++){
+        if(result[str[i]]){
+          result[str[i]]++
+        }else{
+          result[str[i]] = 1
+        }
 }
-console.log(duplicate);
 console.log(result);
