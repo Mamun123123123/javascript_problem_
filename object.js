@@ -261,6 +261,7 @@ for (let i = 0; i < obj.length; i++) {
   } else {
     result_by[dept] = [obj[i]]
   }
+  
 }
 
 console.log(result_by)
