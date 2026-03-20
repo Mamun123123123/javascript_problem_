@@ -131,31 +131,31 @@
 
 // console.log(result)
 
-let arr = [1,2,3,4]
-let result = []
+// let arr = [1,2,3,4]
+// let result = []
 
-for(let i = 0; i < arr.length; i++){
-    let product = 1
+// for(let i = 0; i < arr.length; i++){
+//     let product = 1
     
-    for(let j = 0; j < arr.length; j++){
-        if(i !== j){  
-            product *= arr[j]
-        }
-    }
+//     for(let j = 0; j < arr.length; j++){
+//         if(i !== j){  
+//             product *= arr[j]
+//         }
+//     }
     
-    result.push(product)
-}
+//     result.push(product)
+// }
 
 // console.log(result)
 
-let ar = [1,2,4,"m","a",10]
-let result_string = ar.filter(item=>{
-  if(typeof item === "number"){
-    return true
-  }else{
-    return false
-  }
-})
+// let ar = [1,2,4,"m","a",10]
+// let result_string = ar.filter(item=>{
+//   if(typeof item === "number"){
+//     return true
+//   }else{
+//     return false
+//   }
+// })
 // console.log(result_string);
 
 let people = [
@@ -214,10 +214,22 @@ for(let key  in employees){
   }
   
 }
-console.log(male_group);
-console.log(female_group);
-console.log(high_salary);
-console.log(sorted);
+// console.log(male_group);
+// console.log(female_group);
+// console.log(high_salary);
+// console.log(sorted);
 
 
 
+let arr = [1,2,3,2,4,1]
+let result = []
+let duplicate = []
+for(let i=0;i<arr.length;i++){
+  if(result.includes(arr[i])){
+    duplicate.push(arr[i])
+  }else{
+    result.push(arr[i])
+  }
+}
+console.log(duplicate);
+console.log(result);
