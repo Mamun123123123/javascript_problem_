@@ -265,3 +265,16 @@ for (let i = 0; i < obj.length; i++) {
 }
 
 console.log(result_by)
+
+let s = "i love js i love code"
+let strr = s.split(' ')
+let word_count = []
+for(let i=0;i<strr.length;i++){
+  if(word_count[strr[i]]){
+    word_count[strr[i]]++
+  }else{
+    word_count[strr[i]] = 1
+  }
+}
+
+console.log(word_count);
