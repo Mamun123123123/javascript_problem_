@@ -264,7 +264,7 @@ for (let i = 0; i < obj.length; i++) {
   
 }
 
-console.log(result_by)
+// console.log(result_by)
 
 let s = "i love js i love code"
 let strr = s.split(' ')
@@ -277,4 +277,22 @@ for(let i=0;i<strr.length;i++){
   }
 }
 
-console.log(word_count);
+// console.log(word_count);
+
+
+let arr = [
+  {name:"A", dept:"IT"},
+  {name:"B", dept:"HR"},
+  {name:"C", dept:"IT"}
+]
+let result_by_property = {}
+for(let i=0;i<arr.length;i++){
+  let dept = arr[i].dept
+  if(result_by_property[dept]){
+    result_by_property[dept].push(arr[i])
+  }else{
+    result_by_property[dept] = [arr[i]]
+  }
+  
+}
+console.log(result_by_property);
