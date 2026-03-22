@@ -21,3 +21,11 @@ for(let i=0;i<str.length;i++){
    result.push((isPalindrome(str[i])))
 } 
 console.log(result);
+
+
+let num = 5
+function factorial(n){
+ if(n===0)return 1
+ return n*factorial(n-1)
+}
+console.log(factorial(num))
