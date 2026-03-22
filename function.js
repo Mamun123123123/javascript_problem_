@@ -29,3 +29,15 @@ function factorial(n){
  return n*factorial(n-1)
 }
 console.log(factorial(num))
+
+
+function flattenDeep(arr) {
+  return arr.reduce((acc, val) => {
+    return Array.isArray(val) 
+      ? acc.concat(flattenDeep(val)) 
+      : acc.concat(val);
+  }, []);
+}
+
+const nestedArray = [1, [2, [3, [4,[0], 5]], 6], 7];
+console.log(flattenDeep(nestedArray));
