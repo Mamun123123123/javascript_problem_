@@ -200,13 +200,31 @@
 // console.log(result)
 
 
-let nums = [2,7,11,15]
-let target = 9
-let result = []
-for(let i=0;i<nums.length;i++){
-    if(nums[i]+nums[i+1] === target){
-        result.push(i,i+1)
+// let nums = [2,7,11,15]
+// let target = 9
+// let result = []
+// for(let i=0;i<nums.length;i++){
+//     if(nums[i]+nums[i+1] === target){
+//         result.push(i,i+1)
         
+//     }
+// }
+// console.log(result);
+
+let ob = [
+    {name:"A",dept:"IT"},
+    {name:"B",dept:"HR"},
+    {name:"C",dept:"IT"}
+]
+let result = {}
+for (let i=0;i<ob.length;i++) {
+    console.log(ob[i].dept);
+    if(result[ob[i].dept]){
+        result[ob[i].dept].push(ob[i])
+    }else{
+        result[ob[i].dept] = [ob[i]]
     }
+    
 }
 console.log(result);
+
