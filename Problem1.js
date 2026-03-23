@@ -165,15 +165,15 @@
 // }
 // console.log(duplicate);
 
-let arr = [1,2,3,4,6]
+// let arr = [1,2,3,4,6]
 
-let max = Math.max(...arr)
+// let max = Math.max(...arr)
 
-for(let i = 1;i<=max;i++){
-    if(!arr.includes(i)){
-        console.log(i);
-    }
-}
+// for(let i = 1;i<=max;i++){
+//     if(!arr.includes(i)){
+//         console.log(i);
+//     }
+// }
 
 // let str = "javascript"
 // let result = str.split("")
@@ -187,14 +187,26 @@ for(let i = 1;i<=max;i++){
 // let without_vowel = r.join("")
 // console.log(without_vowel);
 
-let str = "javascript"
-let vowels = "aeiouAEIOU"
-let result = ""
+// let str = "javascript"
+// let vowels = "aeiouAEIOU"
+// let result = ""
 
-for(let i=0;i<str.length;i++){
-    if(!vowels.includes(str[i])){
-        result += str[i]
+// for(let i=0;i<str.length;i++){
+//     if(!vowels.includes(str[i])){
+//         result += str[i]
+//     }
+// }
+
+// console.log(result)
+
+
+let nums = [2,7,11,15]
+let target = 9
+let result = []
+for(let i=0;i<nums.length;i++){
+    if(nums[i]+nums[i+1] === target){
+        result.push(i,i+1)
+        
     }
 }
-
-console.log(result)
+console.log(result);
