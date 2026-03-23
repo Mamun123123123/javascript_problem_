@@ -211,20 +211,33 @@
 // }
 // console.log(result);
 
-let ob = [
-    {name:"A",dept:"IT"},
-    {name:"B",dept:"HR"},
-    {name:"C",dept:"IT"}
-]
-let result = {}
-for (let i=0;i<ob.length;i++) {
-    console.log(ob[i].dept);
-    if(result[ob[i].dept]){
-        result[ob[i].dept].push(ob[i])
-    }else{
-        result[ob[i].dept] = [ob[i]]
-    }
+// let ob = [
+//     {name:"A",dept:"IT"},
+//     {name:"B",dept:"HR"},
+//     {name:"C",dept:"IT"}
+// ]
+// let result = {}
+// for (let i=0;i<ob.length;i++) {
+//     console.log(ob[i].dept);
+//     if(result[ob[i].dept]){
+//         result[ob[i].dept].push(ob[i])
+//     }else{
+//         result[ob[i].dept] = [ob[i]]
+//     }
     
-}
-console.log(result);
+// }
+// console.log(result);
+
+// let arr = [3,0,1]
+// // let result = []
+// let max = Math.max(...arr)
+// // console.log(max);
+
+// for(let i=0;i<=max;i++){
+//     if(!arr.includes(i)){
+//         // result.push(i)
+//         console.log(i); 
+//     }
+// }
+// console.log(result);
 
