@@ -55,3 +55,7 @@ function flatten(arr){
 }
 
 console.log(flatten([1,[2,[3,4],5]]))
+
+function deepClone(obj){
+    return JSON.parse(JSON.stringify(obj))
+}
