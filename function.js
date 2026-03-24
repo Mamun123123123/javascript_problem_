@@ -59,3 +59,8 @@ console.log(flatten([1,[2,[3,4],5]]))
 function deepClone(obj){
     return JSON.parse(JSON.stringify(obj))
 }
+function isAnagram(a, b){
+    return a.split('').sort().join('') === b.split('').sort().join('')
+}
+
+console.log(isAnagram("listen", "silent"))
