@@ -48,3 +48,10 @@ function removeDuplicate(arr){
 }
 
 console.log(removeDuplicate([1,2,2,3,4,4]))
+
+
+function flatten(arr){
+    return arr.flat(Infinity)
+}
+
+console.log(flatten([1,[2,[3,4],5]]))
