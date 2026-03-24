@@ -43,3 +43,8 @@ const nestedArray = [1, [2, [3, [4,[0], 5]], 6], 7];
 
 console.log(flattenDeep(nestedArray));
 
+function removeDuplicate(arr){
+    return [...new Set(arr)]
+}
+
+console.log(removeDuplicate([1,2,2,3,4,4]))
