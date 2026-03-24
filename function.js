@@ -40,4 +40,6 @@ function flattenDeep(arr) {
 }
 
 const nestedArray = [1, [2, [3, [4,[0], 5]], 6], 7];
+
 console.log(flattenDeep(nestedArray));
+
