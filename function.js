@@ -1,5 +1,5 @@
   /// sum of array problem 1
-let arr = [1,2,3,4,5,6,7,8,9,10]
+// let arr = [1,2,3,4,5,6,7,8,9,10]
 function sum_Of_array(arr){
     // console.log(arr);
     return arr.reduce((item,sum)=>item+sum,0)
@@ -15,12 +15,12 @@ function isPalindrome(str){
 // console.log(isPalindrome(str));
 
 
-let str = ["madam","mamun","amma"]
-let result = []
-for(let i=0;i<str.length;i++){
-   result.push((isPalindrome(str[i])))
-} 
-console.log(result);
+// let str = ["madam","mamun","amma"]
+// let result = []
+// for(let i=0;i<str.length;i++){
+//    result.push((isPalindrome(str[i])))
+// } 
+// console.log(result);
 
 
 let num = 5
@@ -64,3 +64,16 @@ function isAnagram(a, b){
 }
 
 console.log(isAnagram("listen", "silent"))
+
+let arr = [1,2,2,3,4,4,5]
+let result = []
+
+for (let i = 0; i < arr.length; i++) {
+  if (!result.includes(arr[i])) {
+    result.push(arr[i])
+  }
+}
+
+console.log(result) 
+
+
