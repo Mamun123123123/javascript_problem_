@@ -1,3 +1,9 @@
 let prompt = require('prompt-sync')()
-let num = prompt("Enter a number : ")
-process.stdout.write(num)
+let n = Number(prompt("Enter a number : "))
+for(let i=1;i<=n;i++){
+    for(let j=1;j<=n;j++){
+        process.stdout.write("*")
+    }
+    console.log();
+    
+}
