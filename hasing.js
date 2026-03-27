@@ -14,10 +14,21 @@ let set = new Set()
 // }
 
 
-let arr = [1,2,4,1,2,4,3,1,7,7]
+let arr = [1,2,4,1,2,4,3,3,1,7,7]
+// for(let i=0;i<arr.length;i++){
+//         if(!set.has(arr[i])){
+//                set.add(arr[i])
+//         }
+// }
+// console.log(set);
+
 for(let i=0;i<arr.length;i++){
-        if(!set.has(arr[i])){
-               set.add(arr[i])
-        }
+    if(set.has(arr[i])){
+        set.delete(arr[i])
+    }else{
+        set.add(arr[i])
+    }
 }
 console.log(set);
+
+
