@@ -88,3 +88,20 @@ for(let i=0;i<str.length;i++){
 } 
 
 console.log(result);
+
+let users = [
+  { name: "A", age: 20 },
+  { name: "B", age: 20 },
+  { name: "C", age: 25 }
+];
+
+let groupByAge = {}
+
+for (const user of users) {
+    if(!groupByAge[user.age]){
+        groupByAge[user.age] = []
+    }
+    groupByAge[user.age].push(user)
+              
+}
+console.log(groupByAge);
