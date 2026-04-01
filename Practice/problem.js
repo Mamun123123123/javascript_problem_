@@ -121,16 +121,30 @@
 // let sorted = users.sort((a,b)=>a.age - b.age)
 // console.log(sorted);
 
-let arr = [1, [2, [3, 4]], 5];
-function flatten(arr){
-    let result = []
-    for(let ar of arr){
-        if(Array.isArray(ar)){
-            result = result.concat(flatten(ar))
-        }else{
-            result.push(ar)
-        }
+// let arr = [1, [2, [3, 4]], 5];
+// function flatten(arr){
+//     let result = []
+//     for(let ar of arr){
+//         if(Array.isArray(ar)){
+//             result = result.concat(flatten(ar))
+//         }else{
+//             result.push(ar)
+//         }
+//     }
+//     return result
+// }
+// console.log(flatten(arr));
+
+
+let arr =  [2,1,4,6,8]
+let max = arr[0]
+let secondmax = arr[1]
+for(let i=2;i<arr.length;i++){
+    if(arr[i]>max){
+        secondmax = max
+        max = arr[i]
+    }else if (arr[i]>secondmax && arr[i] !=max){
+             secondmax = arr[i]
     }
-    return result
 }
-console.log(flatten(arr));
+console.log(secondmax);
