@@ -54,3 +54,37 @@ console.log(removeDuplicate);
 // let result = str.split(" ")
 // console.log(result.length);
 
+let user = {
+    name : "mamun",
+    age : 23,
+    address : {
+        city : "Dhaka",
+        country : "Bangladesh"
+    },
+    salary : 120
+}
+
+for (const key in user) {
+    console.log(key ,user[key]);
+    
+}
+
+let obj = {
+    a:10,b:20,c:30
+}
+let sum = Object.values(obj).reduce((a,b)=>a+b,0)
+console.log(sum);
+
+
+
+let str = "mamunmamun"
+let result = {}
+for(let i=0;i<str.length;i++){
+    if(result[str[i]]){
+        result[str[i]]++
+    }else{
+        result[str[i]] = 1
+    }
+} 
+
+console.log(result);
