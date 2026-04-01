@@ -24,15 +24,33 @@ for(let i=0;i<arr.length;i++){
 }
 console.log(removeDuplicate);
 
-let str = "mamun"
-let vowels = "aeiouAEIOU"
-let result = ""
-for(let i=0;i<str.length;i++){
-    if(vowels.includes(str[i])){
-        result += str[i]
-    }
-} 
-console.log(result);
-console.log(result.length);
+// let str = "mamun"
+// let vowels = "aeiouAEIOU"
+// let result = ""
+// for(let i=0;i<str.length;i++){
+//     if(vowels.includes(str[i])){
+//         result += str[i]
+//     }
+// } 
+// console.log(result);
+// console.log(result.length);
 
+// let str = "mamun"
+// let result = str.charAt(0).toUpperCase() + str.slice(1)
+// console.log(result);
+
+// let str = "mamun"
+// let vowels = "aeiouAEIOU"
+// let count = 0
+// for(let i=0;i<str.length;i++){
+//     if(!vowels.includes(str[i])){
+//         count++
+//     }
+// }
+// console.log(count);
+
+// let str = "This is my javascript project"
+// let count = 0
+// let result = str.split(" ")
+// console.log(result.length);
 
