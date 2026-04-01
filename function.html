@@ -1,11 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biodata - Mahmuda Sultana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'body': ['"Inter"', 'sans-serif'] },
+                    colors: {
+                        'cream': '#FDF8F0',
+                        'gold': '#C5A24E',
+                        'gold-light': '#E8D5A0',
+                        'gold-dark': '#A68A3E',
+                        'deep-green': '#0D4A2E',
+                        'emerald-c': '#1A6B45',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; margin: 0; }
+            .no-print { display: none !important; }
+            .main-wrap { box-shadow: none !important; }
+        }
+        body { font-family: 'Inter', sans-serif; background: #ede8e0; min-height: 100vh; }
+        .border-pattern {
+            background-image: repeating-linear-gradient(90deg, transparent, transparent 6px, rgba(197,162,78,0.25) 6px, rgba(197,162,78,0.25) 8px),
+                repeating-linear-gradient(0deg, transparent, transparent 6px, rgba(197,162,78,0.25) 6px, rgba(197,162,78,0.25) 8px);
+        }
+        .corner { width: 28px; height: 28px; border-color: #C5A24E; }
+        .c-tl { border-top: 2px solid; border-left: 2px solid; }
+        .c-tr { border-top: 2px solid; border-right: 2px solid; }
+        .c-bl { border-bottom: 2px solid; border-left: 2px solid; }
+        .c-br { border-bottom: 2px solid; border-right: 2px solid; }
+    </style>
 </head>
-<body>
-    <script src="function.js"></script>
+<body class="py-4 px-4 flex justify-center">
+    <button onclick="window.print()" class="no-print fixed top-3 right-3 z-50 flex items-center gap-1.5 bg-deep-green hover:bg-emerald-c text-white px-4 py-2 rounded-lg shadow-lg text-sm font-bold transition cursor-pointer">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+        Print
+    </button>
+
+    <div class="main-wrap w-full max-w-[210mm] bg-white rounded-xl shadow-2xl overflow-hidden">
+        <div class="p-1.5">
+            <div class="border-pattern rounded-lg p-0.5">
+                <div class="bg-white rounded-md relative">
+
+                    <!-- Header -->
+                    <div class="text-black px-6 pt-6 pb-7 text-center relative overflow-hidden">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-white/5 rounded-full"></div>
+                        <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-white/5 rounded-full"></div>
+                        <div class="absolute top-3 left-3 corner c-tl"></div>
+                        <div class="absolute top-3 right-3 corner c-tr"></div>
+                        <div class="flex items-center justify-center gap-2 mb-1 relative z-10">
+                            <div class="w-10 h-px bg-gold-light/40"></div>
+                            <svg class="w-3.5 h-3.5 text-gold-light" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2Z"/></svg>
+                            <div class="w-10 h-px bg-gold-light/40"></div>
+                        </div>
+                        <h1 class="text-2xl md:text-3xl font-black relative z-10 underline">Biodata</h1>
+                        <svg class="absolute bottom-0 left-0 w-full h-4" viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 C300,40 900,0 1200,20 L1200,40 L0,40Z" fill="#ffffff"/></svg>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="px-6 md:px-8 -mt-4 relative z-10">
+                        <div class="bg-white rounded-lg shadow border border-gold/15 p-4 text-center">
+                            <h2 class="text-2xl font-black text-black">Mahmuda Sultana</h2>
+                        </div>
+                    </div>
+
+                    <!-- Content Grid -->
+                    <div class="px-6 md:px-8 mt-4 pb-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                        <!-- Personal Info -->
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="w-7 h-7 bg-deep-green rounded flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                                </div>
+                                <h3 class="text-base font-black text-black">Personal Information</h3>
+                            </div>
+                            <div class="space-y-2.5">
+                                <div class="flex justify-between items-center bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <span class="text-sm text-black font-bold">Date of Birth</span>
+                                    <span class="text-sm font-black text-black">08 December, 2005</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <span class="text-sm text-black font-bold">Height</span>
+                                    <span class="text-sm font-black text-black">5′ 2″</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <span class="text-sm text-black font-bold">Complexion</span>
+                                    <span class="text-sm font-black text-black">Fair (Wheatish)</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <span class="text-sm text-black font-bold">Blood Group</span>
+                                    <span class="text-sm font-black text-black">A (Positive)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="w-7 h-7 bg-deep-green rounded flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                                </div>
+                                <h3 class="text-base font-black text-black">Educational Qualification</h3>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <div class="w-2 h-2 rounded-full bg-gold mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <div class="flex items-center flex-wrap">
+                                            <span class="text-sm font-black text-black">Dakhil - 2021,</span>
+                                            <span class="text-xs bold font-black px-2 py-0.5 rounded">GPA - 5.00</span>
+                                        </div>
+                                        <p class="text-xs text-black font-bold mt-0.5">Science | Tamirul Millat Mohila Kamil Madrasah, Dhaka</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <div class="w-2 h-2 rounded-full bg-gold mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <div class="flex items-center flex-wrap">
+                                            <span class="text-sm font-black text-black">Alim - 2023,</span>
+                                            <span class="text-xs bold font-black px-2 py-0.5 rounded">GPA - 5.00</span>
+                                        </div>
+                                        <p class="text-xs text-black font-bold mt-0.5">Science | Tamirul Millat Mohila Kamil Madrasah, Dhaka</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-2.5">
+                                    <div class="w-2 h-2 rounded-full bg-emerald-c mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <div class="flex items-center flex-wrap">
+                                            <span class="text-sm font-black text-black">Fazil</span>
+                                            <span class="text-xs font-black px-2 py-0.5 rounded">(Ongoing)</span>
+                                            <span class="text-xs text-black font-bold">2nd Year</span>
+                                        </div>
+                                        <p class="text-xs text-black font-bold mt-0.5">Tamirul Millat Mohila Kamil Madrasah, Dhaka</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2.5 bg-white border border-gold/30 rounded-lg px-4 py-2.5">
+                                    <div class="w-2 h-2 rounded-full bg-gold-dark mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <div class="flex items-center gap-2 flex-wrap">
+                                            <span class="text-sm font-black text-black">BA (Hons) in English</span>
+                                            <span class="text-xs font-black px-2 py-0.5 rounded">(Ongoing)</span>
+                                            <span class="text-xs text-black font-bold">3rd Year</span>
+                                        </div>
+                                        <p class="text-xs text-black font-bold mt-0.5">Bangladesh Islamic University, Dhaka</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Family Info -->
+                        <div class="md:col-span-2 bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="w-7 h-7 bg-deep-green rounded flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+                                </div>
+                                <h3 class="text-base font-black text-black">Family Information</h3>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <!-- Father -->
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 border-l-4 border-deep-green">
+                                    <div class="flex items-center gap-2 mb-1.5">
+                                        <div class="w-7 h-7 bg-deep-green rounded-full flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                                        </div>
+                                        <span class="text-sm text-black font-bold">Father</span>
+                                    </div>
+                                    <p class="text-sm font-black text-black">Maulana Md. Mukhlasur Rahman <span class="font-bold">(Kamil)</span></p>
+                                    <p class="text-sm text-black font-bold mt-1">Religious Teacher, Bangladesh Army</p>
+                                    <p class="text-sm text-black font-black mt-1">☎ 01816-061082</p>
+                                </div>
+                                <!-- Mother -->
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 border-l-4 border-gold">
+                                    <div class="flex items-center gap-2 mb-1.5">
+                                        <div class="w-7 h-7 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                                        </div>
+                                        <span class="text-sm text-black font-bold">Mother</span>
+                                    </div>
+                                    <p class="text-sm font-black text-black">Hosna Begum <span class="font-bold">(M.A)</span></p>
+                                    <p class="text-sm text-black font-bold mt-1">Assistant Revenue Officer, National Board of Revenue, Dhaka</p>
+                                </div>
+                            </div>
+
+                            <!-- Siblings -->
+                            <div class="mt-4 border-t border-gray-200 pt-3">
+                                <p class="text-sm text-black font-black mb-2.5">Siblings</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    <div class="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-3">
+                                        <div class="w-6 h-6 bg-deep-green/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="text-xs font-black text-deep-green">1</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-black text-black">Abdullah Al Mamun</p>
+                                            <p class="text-sm text-black font-bold">CSE, 4th Year</p>
+                                            <p class="text-xs text-black font-bold">Bangladesh Army International University of Science & Technology, Comilla</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-3">
+                                        <div class="w-6 h-6 bg-deep-green/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="text-xs font-black text-deep-green">2</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-black text-black">Abdullah Al Masum</p>
+                                            <p class="text-sm text-black font-bold">Alim Examinee, 2026</p>
+                                            <p class="text-xs text-black font-bold">Darunnazat Siddikiya Kamil Madrasah, Dhaka</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Addresses -->
+                        <div class="md:col-span-2 bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="w-7 h-7 bg-deep-green rounded flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                </div>
+                                <h3 class="text-base font-black text-black">Address</h3>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 border-l-4 border-deep-green">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <div class="w-2 h-2 bg-deep-green rounded-full"></div>
+                                        <span class="text-sm font-black text-black">Permanent Address</span>
+                                    </div>
+                                    <p class="text-sm text-black font-bold leading-relaxed">Village: Bangara, Upazila: Nabinagar, District: Brahmanbaria</p>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 border-l-4 border-gold">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <div class="w-2 h-2 bg-gold-dark rounded-full"></div>
+                                        <span class="text-sm font-black text-black">Present Address</span>
+                                    </div>
+                                    <p class="text-sm text-black font-bold leading-relaxed">New Town A/A, Matuail, Demra, Dhaka-1362</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="bg-gradient-to-br from-deep-green to-emerald-c text-white px-6 pt-5 pb-5 text-center relative overflow-hidden">
+                        <svg class="absolute top-0 left-0 w-full h-3" viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,15 C400,30 800,0 1200,15 L1200,0 L0,0Z" fill="#ffffff"/></svg>
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-white/5 rounded-full"></div>
+                        <div class="absolute bottom-2 left-2 corner c-bl" style="width:22px;height:22px;"></div>
+                        <div class="absolute bottom-2 right-2 corner c-br" style="width:22px;height:22px;"></div>
+                        <div class="relative z-10 flex items-center justify-center gap-2">
+                            <div class="w-6 h-px bg-gold-light/30"></div>
+                            <svg class="w-3 h-3 text-gold-light/50" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2Z"/></svg>
+                            <div class="w-6 h-px bg-gold-light/30"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
