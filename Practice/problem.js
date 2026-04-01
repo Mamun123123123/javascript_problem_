@@ -105,3 +105,10 @@ for (const user of users) {
               
 }
 console.log(groupByAge);
+
+let ar = [1,2,3,4]
+let r = ar.find(item => item>1)
+let r2 = ar.filter(item => item>1)
+console.log(r);
+console.log(r2);
+
